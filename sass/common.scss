@@ -19,40 +19,85 @@ a{
 
 	}
 }
+@include keyframes(rotate) {
+	from {
+		@include rotate(0);
+		opacity: 1;
+	}
+	50% {opacity: 0.2;}
+	to {
+		@include rotate(-360);
+		opacity: 1;
+	}
+}
+@include keyframes(blink1) {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+@include keyframes(blink2) {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@include keyframes(btn) {
+	from {
+		background: #ec6500;
+		top:52px;
+		right: 222px;
+	}
+	85% {
+		background: #ec6500;
+		top:52px;
+		right: 222px;
+	}
+	to {
+		background: #f7a71f;
+		top:54px;
+		right: 224px;
+	}
+}
+@include keyframes(ride) {
+	from {left: 100%;}
+	to {left: -950px;}
+}
+
 .bus{
 	@include sized-sprite($icons, 'bus');
 	position: fixed;
-	left: 0;
+	left: 100%;
 	bottom: 0;
+	@include animation(ride 50s linear infinite);
 	a{
 		display: block;
 		height: 100%;
 		}
 	%bus__wheel{
 		position: absolute;
-		bottom: 3px;
+		bottom: 4px;
 		@include sized-sprite($icons, 'wheel');
 	}
 	.bus__wheel1{
 		@extend %bus__wheel;
 		left: 76px;
+		@include animation(rotate 0.8s linear infinite);
 	}
 	.bus__wheel2{
 		@extend %bus__wheel;
 		left: 260px;
+		@include animation(rotate 0.8s linear infinite);
 	}
 	.bus__text1{
 		@include sized-sprite($icons, 'text-1');
 		position: absolute;
 		right: 184px;
 		top: 17px;
-		display: none;
+		@include animation(blink1 2s cubic-bezier(1,0,0,1) infinite);
 	}
 	.bus__text2{
 		@include sized-sprite($icons, 'text-2');
 		position: absolute;
 		right: 219px;
 		top: 15px;
+		@include animation(blink2 2s cubic-bezier(1,0,0,1) infinite);
 	}
 	.bus__btn{
 		position: absolute;
@@ -70,9 +115,7 @@ a{
 			display: inline-block;
 			margin-top: 6px;
 		}
-		&:hover{
-			background: #f7a71f;
-		}
+		@include animation(btn 2s cubic-bezier(1,0,0,1) infinite);
 	}
 	.bus__close{
 		left: 100%;

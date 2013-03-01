@@ -6,14 +6,98 @@ a img, fieldset { border: none; }
 
 a { color: #00919e; }
 
-.bus { background: url('../img/icons-s56c9013a44.png') 0 0 no-repeat; width: 914px; height: 100px; position: fixed; left: 0; bottom: 0; }
+@-moz-keyframes rotate { from { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; }
+  50% { opacity: 0.2; }
+  to { -moz-transform: rotate(-360deg); -o-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; } }
+
+@-webkit-keyframes rotate { from { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; }
+  50% { opacity: 0.2; }
+  to { -moz-transform: rotate(-360deg); -o-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; } }
+
+@-o-keyframes rotate { from { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; }
+  50% { opacity: 0.2; }
+  to { -moz-transform: rotate(-360deg); -o-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; } }
+
+@-ms-keyframes rotate { from { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; }
+  50% { opacity: 0.2; }
+  to { -moz-transform: rotate(-360deg); -o-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; } }
+
+@keyframes rotate { from { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; }
+  50% { opacity: 0.2; }
+  to { -moz-transform: rotate(-360deg); -o-transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; opacity: 1; } }
+
+@-moz-keyframes blink1 { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@-webkit-keyframes blink1 { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@-o-keyframes blink1 { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@-ms-keyframes blink1 { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@keyframes blink1 { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@-moz-keyframes blink2 { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-webkit-keyframes blink2 { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-o-keyframes blink2 { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-ms-keyframes blink2 { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@keyframes blink2 { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-moz-keyframes btn { from { background: #ec6500; top: 52px; right: 222px; }
+  85% { background: #ec6500; top: 52px; right: 222px; }
+  to { background: #f7a71f; top: 54px; right: 224px; } }
+
+@-webkit-keyframes btn { from { background: #ec6500; top: 52px; right: 222px; }
+  85% { background: #ec6500; top: 52px; right: 222px; }
+  to { background: #f7a71f; top: 54px; right: 224px; } }
+
+@-o-keyframes btn { from { background: #ec6500; top: 52px; right: 222px; }
+  85% { background: #ec6500; top: 52px; right: 222px; }
+  to { background: #f7a71f; top: 54px; right: 224px; } }
+
+@-ms-keyframes btn { from { background: #ec6500; top: 52px; right: 222px; }
+  85% { background: #ec6500; top: 52px; right: 222px; }
+  to { background: #f7a71f; top: 54px; right: 224px; } }
+
+@keyframes btn { from { background: #ec6500; top: 52px; right: 222px; }
+  85% { background: #ec6500; top: 52px; right: 222px; }
+  to { background: #f7a71f; top: 54px; right: 224px; } }
+
+@-moz-keyframes ride { from { left: 100%; }
+  to { left: -950px; } }
+
+@-webkit-keyframes ride { from { left: 100%; }
+  to { left: -950px; } }
+
+@-o-keyframes ride { from { left: 100%; }
+  to { left: -950px; } }
+
+@-ms-keyframes ride { from { left: 100%; }
+  to { left: -950px; } }
+
+@keyframes ride { from { left: 100%; }
+  to { left: -950px; } }
+
+.bus { background: url('../img/icons-scafa3204a1.png') 0 0 no-repeat; width: 914px; height: 100px; position: fixed; left: 100%; bottom: 0; -webkit-animation: ride 50s linear infinite; -moz-animation: ride 50s linear infinite; -ms-animation: ride 50s linear infinite; -o-animation: ride 50s linear infinite; animation: ride 50s linear infinite; }
 .bus a { display: block; height: 100%; }
-.bus .bus__wheel1, .bus .bus__wheel2 { position: absolute; bottom: 3px; background: url('../img/icons-s56c9013a44.png') 0 -233px no-repeat; width: 20px; height: 20px; }
-.bus .bus__wheel1 { left: 76px; }
-.bus .bus__wheel2 { left: 260px; }
-.bus .bus__text1 { background: url('../img/icons-s56c9013a44.png') 0 -146px no-repeat; width: 212px; height: 26px; position: absolute; right: 184px; top: 17px; display: none; }
-.bus .bus__text2 { background: url('../img/icons-s56c9013a44.png') 0 -110px no-repeat; width: 152px; height: 26px; position: absolute; right: 219px; top: 15px; }
-.bus .bus__btn { position: absolute; background: #ec6500; border-radius: 11px; border: 3px solid #fff; width: 144px; text-align: center; height: 29px; top: 52px; right: 222px; box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.45); }
-.bus .bus__btn span { background: url('../img/icons-s56c9013a44.png') 0 -182px no-repeat; width: 128px; height: 17px; display: inline-block; margin-top: 6px; }
-.bus .bus__btn:hover { background: #f7a71f; }
-.bus .bus__close { left: 100%; background: url('../img/icons-s56c9013a44.png') 0 -209px no-repeat; width: 14px; height: 14px; top: 2px; position: absolute; margin-left: 3px; cursor: pointer; }
+.bus .bus__wheel1, .bus .bus__wheel2 { position: absolute; bottom: 4px; background: url('../img/icons-scafa3204a1.png') 0 -233px no-repeat; width: 19px; height: 19px; }
+.bus .bus__wheel1 { left: 76px; -webkit-animation: rotate 0.8s linear infinite; -moz-animation: rotate 0.8s linear infinite; -ms-animation: rotate 0.8s linear infinite; -o-animation: rotate 0.8s linear infinite; animation: rotate 0.8s linear infinite; }
+.bus .bus__wheel2 { left: 260px; -webkit-animation: rotate 0.8s linear infinite; -moz-animation: rotate 0.8s linear infinite; -ms-animation: rotate 0.8s linear infinite; -o-animation: rotate 0.8s linear infinite; animation: rotate 0.8s linear infinite; }
+.bus .bus__text1 { background: url('../img/icons-scafa3204a1.png') 0 -146px no-repeat; width: 212px; height: 26px; position: absolute; right: 184px; top: 17px; -webkit-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; }
+.bus .bus__text2 { background: url('../img/icons-scafa3204a1.png') 0 -110px no-repeat; width: 152px; height: 26px; position: absolute; right: 219px; top: 15px; -webkit-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; }
+.bus .bus__btn { position: absolute; background: #ec6500; border-radius: 11px; border: 3px solid #fff; width: 144px; text-align: center; height: 29px; top: 52px; right: 222px; box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.45); -webkit-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; }
+.bus .bus__btn span { background: url('../img/icons-scafa3204a1.png') 0 -182px no-repeat; width: 128px; height: 17px; display: inline-block; margin-top: 6px; }
+.bus .bus__close { left: 100%; background: url('../img/icons-scafa3204a1.png') 0 -209px no-repeat; width: 14px; height: 14px; top: 2px; position: absolute; margin-left: 3px; cursor: pointer; }
