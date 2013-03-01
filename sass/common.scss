@@ -1,0 +1,85 @@
+@import "base";
+
+*{margin:0;padding:0;-webkit-text-size-adjust: none; }
+body{
+	font: {
+		family: Arial,sans-serif;
+		weight: normal;
+		size: 12px;
+	}
+	line-height:1.4;
+}
+// resets
+a img,fieldset{
+	border:none;
+	}
+a{
+	color:#00919e;
+	&:hover{
+
+	}
+}
+.bus{
+	@include sized-sprite($icons, 'bus');
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	a{
+		display: block;
+		height: 100%;
+		}
+	%bus__wheel{
+		position: absolute;
+		bottom: 3px;
+		@include sized-sprite($icons, 'wheel');
+	}
+	.bus__wheel1{
+		@extend %bus__wheel;
+		left: 76px;
+	}
+	.bus__wheel2{
+		@extend %bus__wheel;
+		left: 260px;
+	}
+	.bus__text1{
+		@include sized-sprite($icons, 'text-1');
+		position: absolute;
+		right: 184px;
+		top: 17px;
+		display: none;
+	}
+	.bus__text2{
+		@include sized-sprite($icons, 'text-2');
+		position: absolute;
+		right: 219px;
+		top: 15px;
+	}
+	.bus__btn{
+		position: absolute;
+		background: #ec6500;
+		border-radius:11px;
+		border:3px solid #fff;
+		width: 144px;
+		text-align: center;
+		height: 29px;
+		top:52px;
+		right: 222px;
+		box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.45);
+		span{
+			@include sized-sprite($icons, 'btn-text');
+			display: inline-block;
+			margin-top: 6px;
+		}
+		&:hover{
+			background: #f7a71f;
+		}
+	}
+	.bus__close{
+		left: 100%;
+		@include sized-sprite($icons, 'close');
+		top:2px;
+		position: absolute;
+		margin-left: 3px;
+		cursor: pointer;
+	}
+}
