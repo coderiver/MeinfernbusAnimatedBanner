@@ -91,7 +91,7 @@ a { color: #00919e; }
 @keyframes ride { from { left: 100%; }
   to { left: -950px; } }
 
-.bus { background: url('../img/icons-scafa3204a1.png') 0 0 no-repeat; width: 914px; height: 100px; position: fixed; left: 100%; bottom: 0; -webkit-animation: ride 50s linear infinite; -moz-animation: ride 50s linear infinite; -ms-animation: ride 50s linear infinite; -o-animation: ride 50s linear infinite; animation: ride 50s linear infinite; }
+.bus { background: url('../img/icons-scafa3204a1.png') 0 0 no-repeat; width: 914px; height: 100px; position: fixed; left: 100%; bottom: 0; padding-right: 20px; -webkit-animation: ride 50s linear infinite; -moz-animation: ride 50s linear infinite; -ms-animation: ride 50s linear infinite; -o-animation: ride 50s linear infinite; animation: ride 50s linear infinite; }
 .bus a { display: block; height: 100%; }
 .bus .bus__wheel1, .bus .bus__wheel2 { position: absolute; bottom: 4px; background: url('../img/icons-scafa3204a1.png') 0 -233px no-repeat; width: 19px; height: 19px; }
 .bus .bus__wheel1 { left: 76px; -webkit-animation: rotate 0.8s linear infinite; -moz-animation: rotate 0.8s linear infinite; -ms-animation: rotate 0.8s linear infinite; -o-animation: rotate 0.8s linear infinite; animation: rotate 0.8s linear infinite; }
@@ -100,4 +100,6 @@ a { color: #00919e; }
 .bus .bus__text2 { background: url('../img/icons-scafa3204a1.png') 0 -110px no-repeat; width: 152px; height: 26px; position: absolute; right: 219px; top: 15px; -webkit-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; }
 .bus .bus__btn { position: absolute; background: #ec6500; border-radius: 11px; border: 3px solid #fff; width: 144px; text-align: center; height: 29px; top: 52px; right: 222px; box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.45); -webkit-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; }
 .bus .bus__btn span { background: url('../img/icons-scafa3204a1.png') 0 -182px no-repeat; width: 128px; height: 17px; display: inline-block; margin-top: 6px; }
-.bus .bus__close { left: 100%; background: url('../img/icons-scafa3204a1.png') 0 -209px no-repeat; width: 14px; height: 14px; top: 2px; position: absolute; margin-left: 3px; cursor: pointer; }
+.bus .bus__close { left: 100%; background: url('../img/icons-scafa3204a1.png') 0 -209px no-repeat; width: 14px; height: 14px; top: 2px; position: absolute; margin-left: -17px; cursor: pointer; }
+
+.paused { -webkit-animation-play-state: paused; -moz-animation-play-state: paused; -o-animation-play-state: paused; animation-play-state: paused; }
