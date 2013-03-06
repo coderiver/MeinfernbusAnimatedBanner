@@ -24,7 +24,7 @@ a{
 		@include rotate(0);
 		opacity: 1;
 	}
-	50% {opacity: 0.2;}
+	//50% {opacity: 0.2;}
 	to {
 		@include rotate(-360);
 		opacity: 1;
@@ -64,27 +64,40 @@ a{
 	@include sized-sprite($icons, 'bus');
 	position: fixed;
 	left: 100%;
+	//left: 0;
 	bottom: 0;
 	padding-right: 20px;
-	@include animation(ride 50s linear infinite);
+	@include animation(ride 40s linear infinite);
 	a{
 		display: block;
 		height: 100%;
 		}
-	%bus__wheel{
-		position: absolute;
-		bottom: 4px;
-		@include sized-sprite($icons, 'wheel');
-	}
 	.bus__wheel1{
-		@extend %bus__wheel;
-		left: 76px;
-		@include animation(rotate 0.8s linear infinite);
+		position: absolute;
+		bottom: -1px;
+		left: 72px;
+		@include sized-sprite($icons, 'wheel1');
+		@include animation(rotate 1s linear infinite);
 	}
 	.bus__wheel2{
-		@extend %bus__wheel;
+		position: absolute;
+		bottom: 0;
+		left: 257px;
+		@include sized-sprite($icons, 'wheel2');
+		@include animation(rotate 1s linear infinite);
+	}
+	%bus__light{
+		position: absolute;
+		bottom: 4px;
+		@include sized-sprite($icons, 'light');
+	}
+	.bus__light1{
+		@extend %bus__light;
+		left: 76px;
+	}
+	.bus__light2{
+		@extend %bus__light;
 		left: 260px;
-		@include animation(rotate 0.8s linear infinite);
 	}
 	.bus__text1{
 		@include sized-sprite($icons, 'text-1');
