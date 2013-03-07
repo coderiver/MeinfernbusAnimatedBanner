@@ -20,15 +20,8 @@ a{
 	}
 }
 @include keyframes(rotate) {
-	from {
-		@include rotate(0);
-		opacity: 1;
-	}
-	//50% {opacity: 0.2;}
-	to {
-		@include rotate(-360);
-		opacity: 1;
-	}
+	from {@include rotate(0);}
+	to {@include rotate(-360);}
 }
 @include keyframes(blink1) {
 	from {opacity: 1;}
@@ -64,10 +57,21 @@ a{
 	@include sized-sprite($icons, 'bus');
 	position: fixed;
 	left: 100%;
-	//left: 0;
 	bottom: 0;
 	padding-right: 20px;
 	@include animation(ride 40s linear infinite);
+	&:hover{
+		-webkit-animation-play-state:paused;
+		-moz-animation-play-state:paused;
+		-o-animation-play-state:paused;
+		animation-play-state:paused;
+		.bus__wheel1, .bus__wheel2{
+			-webkit-animation-play-state:paused;
+			-moz-animation-play-state:paused;
+			-o-animation-play-state:paused;
+			animation-play-state:paused;
+		}
+	}
 	a{
 		display: block;
 		height: 100%;
@@ -139,11 +143,4 @@ a{
 		margin-left: -17px;
 		cursor: pointer;
 	}
-}
-
-.paused{
-	-webkit-animation-play-state:paused;
-	-moz-animation-play-state:paused;
-	-o-animation-play-state:paused;
-	animation-play-state:paused;
 }
