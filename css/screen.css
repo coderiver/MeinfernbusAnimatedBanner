@@ -93,7 +93,7 @@ a { color: #00919e; }
 .bus .bus__light1, .bus .bus__light2 { position: absolute; bottom: 4px; background: url('../img/icons-s79438f925e.png') 0 -305px no-repeat; width: 19px; height: 19px; }
 .bus .bus__light1 { left: 76px; }
 .bus .bus__light2 { left: 260px; }
-.bus .bus__text1 { background: url('../img/icons-s79438f925e.png') 0 -218px no-repeat; width: 212px; height: 26px; position: absolute; right: 184px; top: 17px; -webkit-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; }
+.bus .bus__text1 { background: url('../img/icons-s79438f925e.png') 0 -218px no-repeat; width: 212px; height: 26px; position: absolute; right: 200px; top: 17px; -webkit-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; animation: blink1 2s cubic-bezier(1, 0, 0, 1) infinite; }
 .bus .bus__text2 { background: url('../img/icons-s79438f925e.png') 0 -182px no-repeat; width: 152px; height: 26px; position: absolute; right: 219px; top: 15px; -webkit-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; animation: blink2 2s cubic-bezier(1, 0, 0, 1) infinite; }
 .bus .bus__btn { position: absolute; background: #ec6500; border-radius: 11px; border: 3px solid #fff; width: 144px; text-align: center; height: 29px; top: 52px; right: 222px; box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.45); -webkit-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -moz-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -ms-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; -o-animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; animation: btn 2s cubic-bezier(1, 0, 0, 1) infinite; }
 .bus .bus__btn span { background: url('../img/icons-s79438f925e.png') 0 -254px no-repeat; width: 128px; height: 17px; display: inline-block; margin-top: 6px; }
@@ -101,7 +101,8 @@ a { color: #00919e; }
 
 .bus_ride { -webkit-animation: ride 30s linear 1 none; -moz-animation: ride 30s linear 1 none; -ms-animation: ride 30s linear 1 none; -o-animation: ride 30s linear 1 none; animation: ride 30s linear 1 none; }
 
-.bus_stay { right: -480px; -moz-transition: right 1s linear; -o-transition: right 1s linear; -webkit-transition: right 1s linear; -ms-transition: right 1s linear; transition: right 1s linear; }
+.bus_stay { right: -480px; -moz-transition: right 2s linear; -o-transition: right 2s linear; -webkit-transition: right 2s linear; -ms-transition: right 2s linear; transition: right 2s linear; }
 .bus_stay:hover { right: 0; }
+.bus_stay:hover .bus__wheel1, .bus_stay:hover .bus__wheel2 { -webkit-animation-play-state: running; -moz-animation-play-state: running; -o-animation-play-state: running; animation-play-state: running; }
 
 .bus_ride:hover, .bus_ride:hover .bus__wheel1, .bus_ride:hover .bus__wheel2, .bus_stay .bus__wheel1, .bus_stay .bus__wheel2 { -webkit-animation-play-state: paused; -moz-animation-play-state: paused; -o-animation-play-state: paused; animation-play-state: paused; }

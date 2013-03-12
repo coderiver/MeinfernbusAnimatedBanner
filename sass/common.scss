@@ -15,9 +15,6 @@ a img,fieldset{
 	}
 a{
 	color:#00919e;
-	&:hover{
-
-	}
 }
 @include keyframes(rotate) {
 	from {@include rotate(0);}
@@ -93,7 +90,7 @@ a{
 	.bus__text1{
 		@include sized-sprite($icons, 'text-1');
 		position: absolute;
-		right: 184px;
+		right: 200px;
 		top: 17px;
 		@include animation(blink1 2s cubic-bezier(1,0,0,1) infinite);
 	}
@@ -134,8 +131,16 @@ a{
 .bus_ride{@include animation(ride 30s linear 1 none);}
 .bus_stay{
 	right: -480px;
-	@include transition(right, 1s, linear);
-	&:hover{right: 0;}
+	@include transition(right, 2s, linear);
+	&:hover{
+		right: 0;
+		.bus__wheel1,.bus__wheel2{
+			-webkit-animation-play-state:running;
+			-moz-animation-play-state:running;
+			-o-animation-play-state:running;
+			animation-play-state:running;
+		}
+	}
 }
 .bus_ride:hover,
 .bus_ride:hover .bus__wheel1,
