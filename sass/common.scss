@@ -132,7 +132,7 @@ a{
 	}
 }
 .bus_ride{
-	@include animation(ride 10s linear 1 none);
+	@include animation(ride 30s linear 1 none);
 	&:hover{
 		-webkit-animation-play-state:paused;
 		-moz-animation-play-state:paused;
