@@ -131,23 +131,19 @@ a{
 		cursor: pointer;
 	}
 }
-.bus_ride{
-	@include animation(ride 30s linear 1 none);
-	&:hover{
-		-webkit-animation-play-state:paused;
-		-moz-animation-play-state:paused;
-		-o-animation-play-state:paused;
-		animation-play-state:paused;
-		.bus__wheel1, .bus__wheel2{
-			-webkit-animation-play-state:paused;
-			-moz-animation-play-state:paused;
-			-o-animation-play-state:paused;
-			animation-play-state:paused;
-		}
-	}
-}
+.bus_ride{@include animation(ride 30s linear 1 none);}
 .bus_stay{
 	right: -480px;
 	@include transition(right, 1s, linear);
 	&:hover{right: 0;}
+}
+.bus_ride:hover,
+.bus_ride:hover .bus__wheel1,
+.bus_ride:hover .bus__wheel2,
+.bus_stay .bus__wheel1,
+.bus_stay .bus__wheel2{
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	animation-play-state:paused;
 }
