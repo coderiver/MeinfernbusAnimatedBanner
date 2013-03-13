@@ -3,5 +3,5 @@ $(document).ready(function() {
 		$(this).parent('.bus').remove();
 	});
 	function bus(){$('.bus').removeClass('bus_ride').addClass('bus_stay');}
-	setTimeout(bus, 35000)
+	setTimeout(bus, 2000)
 });
