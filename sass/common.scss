@@ -91,14 +91,14 @@ a{
 		@include sized-sprite($icons, 'text-1');
 		position: absolute;
 		right: 200px;
-		top: 16px;
+		top: 17px;
 		@include animation(blink1 2s cubic-bezier(1,0,0,1) infinite);
 	}
 	.bus__text2{
 		@include sized-sprite($icons, 'text-2');
 		position: absolute;
 		right: 219px;
-		top: 16px;
+		top: 15px;
 		@include animation(blink2 2s cubic-bezier(1,0,0,1) infinite);
 	}
 	.bus__btn{
@@ -131,11 +131,7 @@ a{
 .bus_ride{@include animation(ride 30s linear 1 none);}
 .bus_stay{
 	right: -480px;
-	@include transition(right, 2s, linear);
-	.bus__wheel1, .bus__wheel2{
-		//@include rotate(0);
-		//@include transition(all, 2s, linear);
-	}
+	@include transition(right, 2.5s, linear);
 	&:hover{
 		right: 0;
 		.bus__wheel1,.bus__wheel2{
