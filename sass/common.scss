@@ -60,6 +60,9 @@
 	a{
 		color:#00919e;
 	}
+	&.bus_hidden{
+		display: none;
+	}
 	.bus__wheel1, .bus__wheel2{
 		position: absolute;
 		@include animation(rotate 1s linear infinite);
@@ -98,7 +101,7 @@
 		@include sized-sprite($icons, 'text-2');
 		position: absolute;
 		right: 219px;
-		top: 15px;
+		top: 17px;
 		@include animation(blink2 2s cubic-bezier(1,0,0,1) infinite);
 	}
 	.bus__btn{
@@ -128,7 +131,7 @@
 		cursor: pointer;
 	}
 }
-.bus_ride{@include animation(ride 30s linear 1 none);}
+.bus_ride{@include animation(ride 25s linear 1 none);}
 .bus_stay{
 	right: -480px;
 	@include transition(right, 2.5s, linear);

@@ -6,13 +6,13 @@
 	<title>Template</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<meta name="viewport" content="width=device-width"/>
-	<script src="js/jquery.js"></script>
+	<script src="js/domready.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
 <!-- BEGIN  bus-->
-<div class="bus bus_ride">
+<div class="bus bus_ride" id="uberbus">
 	<a href="#">
 		<div class="bus__wheel1"></div>
 		<div class="bus__wheel2"></div>
@@ -22,9 +22,10 @@
 		<div class="bus__text2"></div>
 		<div class="bus__btn"><span></span></div>
 	</a>
-	<div class="bus__close"></div>
+	<div class="bus__close" onclick="document.getElementById('uberbus').className = 'bus_hidden';return false;"></div>
 </div>
 <!-- END bus-->
+<!-- END BANNER -->
 
 </body>
 </html>
