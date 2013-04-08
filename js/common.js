@@ -16,5 +16,5 @@ function bus(){
 	addClass(uberbus,'bus_stay');
 }
 DomReady.ready(function() {
-	setTimeout(bus, 250000);
+	setTimeout(bus, 25000);
 });

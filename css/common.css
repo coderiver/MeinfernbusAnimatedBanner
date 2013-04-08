@@ -100,6 +100,6 @@
 
 .bus_stay { right: -480px; -moz-transition: right 2.5s linear; -o-transition: right 2.5s linear; -webkit-transition: right 2.5s linear; -ms-transition: right 2.5s linear; transition: right 2.5s linear; }
 .bus_stay:hover { right: 0; }
-.bus_stay:hover .bus__wheel1, .bus_stay:hover .bus__wheel2 { -webkit-animation-play-state: running; -moz-animation-play-state: running; -o-animation-play-state: running; animation-play-state: running; }
+.bus_stay:hover .bus__wheel1, .bus_stay:hover .bus__wheel2 { -webkit-animation-play-state: running; -moz-animation-play-state: running; -o-animation-play-state: running; animation-play-state: running; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; }
 
 .bus_ride:hover, .bus_ride:hover .bus__wheel1, .bus_ride:hover .bus__wheel2, .bus_stay .bus__wheel1, .bus_stay .bus__wheel2 { -webkit-animation-play-state: paused; -moz-animation-play-state: paused; -o-animation-play-state: paused; animation-play-state: paused; }
