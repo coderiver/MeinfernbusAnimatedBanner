@@ -1,21 +1,6 @@
 @import "base";
 
-*{margin:0;padding:0;-webkit-text-size-adjust: none; }
-body{
-	font: {
-		family: Arial,sans-serif;
-		weight: normal;
-		size: 12px;
-	}
-	line-height:1.4;
-}
-// resets
-a img,fieldset{
-	border:none;
-	}
-a{
-	color:#00919e;
-}
+
 @include keyframes(rotate) {
 	from {@include rotate(0);}
 	to {@include rotate(-360);}
@@ -56,10 +41,25 @@ a{
 	right: -950px;
 	bottom: 0;
 	padding-right: 20px;
+	z-index: 10000;
+	font: {
+		family: Arial,sans-serif;
+		weight: normal;
+		size: 12px;
+	}
+	*{margin:0;padding:0;-webkit-text-size-adjust: none; }
+	line-height:1.4;
 	a{
 		display: block;
 		height: 100%;
+	}
+	// resets
+	a img,fieldset{
+		border:none;
 		}
+	a{
+		color:#00919e;
+	}
 	.bus__wheel1, .bus__wheel2{
 		position: absolute;
 		@include animation(rotate 1s linear infinite);
